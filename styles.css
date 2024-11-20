@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #0056b3;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative; /* Tambahkan untuk menempatkan kotak pencarian */
+}
+
+header nav {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.search-container {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+#searchBox {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+    width: 200px;
+}
+
+#searchButton {
+    padding: 8px 15px;
+    border: none;
+    background-color: #ff9800;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #e68900;
+}
+
+.hero {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.content {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #0056b3;
+    color: white;
+    margin-top: 20px;
+}
