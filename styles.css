@@ -12,7 +12,7 @@ header {
     color: white;
     padding: 1rem 0;
     text-align: center;
-    position: relative; /* Tambahkan untuk menempatkan kotak pencarian */
+    position: relative;
 }
 
 header nav {
@@ -74,4 +74,44 @@ footer {
     background: #0056b3;
     color: white;
     margin-top: 20px;
+}
+
+/* Tambahkan Media Queries untuk Mobile */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    header nav {
+        display: block; /* Tampilkan navigasi sebagai blok */
+        text-align: center;
+    }
+
+    header nav a {
+        display: block; /* Setiap link pada baris baru */
+        margin: 5px 0;
+    }
+
+    .search-container {
+        position: static; /* Pindahkan ke bawah navigasi */
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #searchBox {
+        width: 90%; /* Lebar kotak pencarian mengikuti layar */
+    }
+
+    .hero {
+        padding: 1rem;
+        font-size: 0.9rem; /* Kurangi ukuran font untuk layar kecil */
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px;
+    }
 }
