@@ -115,3 +115,40 @@ footer {
         padding: 10px;
     }
 }
+/* Gaya untuk pop-up pemberitahuan */
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    z-index: 1000;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animasi pop-up */
+@keyframes fadein {
+    from {
+        opacity: 0;
+        bottom: 0;
+    }
+    to {
+        opacity: 1;
+        bottom: 20px;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+        bottom: 20px;
+    }
+    to {
+        opacity: 0;
+        bottom: 0;
+    }
+}
